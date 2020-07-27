@@ -3,14 +3,7 @@ var http=require('http');
 var led;
 
 http.createServer(function(req,res){
-    res.write('Merhaba ben yeni sunucun.(server)');
-    if(req.url=='/lediYak'){
-      led.on();
-    } 
-    if(req.url=='/lediKapat'){
-      led.off();
-    }
-    console.log(req.url);
+    res.write('ekrana bir html dosyası bassın.');    
     res.end();
 }).listen(8080);
 
